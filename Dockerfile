@@ -25,6 +25,5 @@ ENTRYPOINT mkdir ~/.ssh && \
     cd RESTest && \
     ./scripts/install_dependencies.sh && \
     mvn clean install -DskipTests && \
-    java -jar target/restest-full.jar \
-    src/test/resources/Bikewise/bikewise.properties && \
-    java -jar restest.jar src/test/resources/Folder/api.properties
+    java -jar target/restest-full.jar src/test/resources/Bikewise/bikewise.properties
+    #java -jar restest.jar src/test/resources/Folder/api.properties
